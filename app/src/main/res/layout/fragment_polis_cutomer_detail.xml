@@ -1,0 +1,90 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/viewParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragment.FillCustomerDetailFragment">
+
+        <RelativeLayout
+            android:id="@+id/viewSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorToolbarTransparentBlack"
+            android:visibility="gone">
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/swiUserData"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:padding="@dimen/spacing_normal"
+                android:text="Using profile data"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/viewScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/viewButtonNavigation"
+            android:layout_below="@+id/viewSwitch">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/frameHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:transitionName="@string/message_caption_draft">
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/frameFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"></FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/frameCustomerDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small">
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/frameBene"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small">
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <include
+            layout="@layout/layout_footer_polis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

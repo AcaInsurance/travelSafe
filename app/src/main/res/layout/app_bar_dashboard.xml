@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_dashboard"
+    android:fitsSystemWindows="true"
+    tools:context="com.aca.travelsafe.DashboardActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbarTransparentBlack"
+        android:theme="@style/AppTheme.WithoutActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Title">
+
+            <Button
+                android:id="@+id/btnGetToken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="get token"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/registrationProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    -
+
+    <include layout="@layout/content_dashboard" />
+
+
+</android.support.design.widget.CoordinatorLayout>

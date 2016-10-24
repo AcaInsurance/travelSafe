@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider_horizontal"
+    android:orientation="vertical"
+    tools:context="com.aca.travelsafe.Fragment.TripRegularFragment">
+
+
+    <include layout="@layout/layout_plan" />
+
+    <include layout="@layout/layout_space" />
+
+    <android.support.v7.widget.CardView
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/btnDestination"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_add"
+                android:gravity="left|center_vertical"
+                android:text="@string/label_destination"
+                android:textAllCaps="false" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listNegara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnDestination"
+                android:layout_marginTop="@dimen/spacing_normal" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal"
+        app:contentPaddingBottom="@dimen/spacing_normal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+
+            <Button
+                android:id="@+id/btnFlightDetail"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_add"
+                android:gravity="left|center_vertical"
+                android:text="Flight Detail (Detail Penerbangan)- Optional"
+                android:textAllCaps="false" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listFlightDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnFlightDetail"
+                android:layout_marginTop="@dimen/spacing_normal" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

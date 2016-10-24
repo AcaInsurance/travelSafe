@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:foreground="?selectableItemBackground"
+    android:padding="@dimen/spacing_normal"
+
+    >
+
+    <ImageView
+        android:id="@+id/imgLetter"
+        android:layout_width="@dimen/icon_large"
+        android:layout_height="@dimen/icon_large" />
+
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_toRightOf="@id/imgLetter"
+
+        android:text="@string/country"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+    <TextView
+        android:id="@+id/txtTypeCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtCountry"
+        android:layout_below="@id/txtCountry"
+        android:text="Worldwide"
+        android:textSize="@dimen/text_size_xsmall" />
+
+
+    <FrameLayout
+        android:id="@+id/btnRemove"
+        android:layout_width="@dimen/icon_selector"
+        android:layout_height="@dimen/icon_selector"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:background="?selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:layout_width="@dimen/icon_small"
+            android:layout_height="@dimen/icon_small"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_delete"
+            android:tint="@color/colorAccent"
+            />
+
+    </FrameLayout>
+
+</RelativeLayout>
+

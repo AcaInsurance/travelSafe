@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v7.widget.CardView--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--style="@style/CardView"--><!--&gt;-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_small">
+
+
+    <ImageView
+        android:id="@+id/imgNumber"
+        android:layout_width="@dimen/icon_large"
+        android:layout_height="@dimen/icon_large"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtFlightNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_toRightOf="@id/imgNumber"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:text="@string/flight_no" />
+
+    <FrameLayout
+        android:id="@+id/btnDelete"
+        android:layout_width="@dimen/icon_selector"
+        android:layout_height="@dimen/icon_selector"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtTanggal"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:background="?selectableItemBackgroundBorderless">
+
+
+        <ImageView
+            android:layout_width="@dimen/icon_small"
+            android:layout_height="@dimen/icon_small"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_delete"
+            android:tint="@color/colorAccent" />
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/txtTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_size_xsmall"
+        tools:text="@string/dummy_date" />
+
+    <ImageView
+        android:id="@+id/imgStepper"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtFlightNo"
+        android:layout_below="@id/txtFlightNo"
+        android:background="@drawable/ic_stepper"
+        android:tint="@android:color/black" />
+
+    />
+
+    <TextView
+        android:id="@+id/txtFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imgStepper"
+        android:layout_below="@id/imgStepper"
+        android:fontFamily="sans-serif-light"
+        tools:text="Jkt" />
+
+    <TextView
+        android:id="@+id/txtTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgStepper"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_toRightOf="@+id/txtFrom"
+        android:fontFamily="sans-serif-light"
+        tools:text="Can" />
+</RelativeLayout>
+
+    <!--</android.support.v7.widget.CardView>-->

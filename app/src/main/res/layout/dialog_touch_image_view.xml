@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <com.aca.travelsafe.Widget.TouchImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        tools:src="@drawable/img_promo" />
+
+    <TextView
+        android:id="@+id/txtGettingImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/message_caption_getting_promo"
+        android:textColor="@color/colorText" />
+
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="@dimen/icon_small"
+        android:layout_height="@dimen/icon_small"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/imgPhoto"
+        android:src="@drawable/ic_close"
+        android:tint="@android:color/white" />
+</RelativeLayout>

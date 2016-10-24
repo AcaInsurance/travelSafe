@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aca.travelsafe.Fragment.TermAndConditionFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/viewButtonNavigation"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.aca.travelsafe.Fragment.TermAndConditionFragment">
+
+            <TextView
+                style="@style/label_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_small"
+                android:text="Hal-hal penting" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:fontFamily="sans-serif-light"
+                android:padding="@dimen/spacing_small"
+                android:text="@string/label_caption_you_can_tap_and_zoom_the_image_below" />
+
+            <ProgressBar
+                android:id="@+id/pbLoading"
+                style="@style/Base.Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_small" />
+
+            <ImageView
+                android:id="@+id/imgHalPenting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/spacing_small"
+                tools:src="@drawable/ic_account_box" />
+
+
+            <TextView
+                style="@style/label_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_small"
+                android:text="Syarat dan ketentuan:" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:padding="@dimen/spacing_normal"
+                android:text="@string/message_syarat_ketentuan"
+                android:textColor="@color/colorPrimaryText" />
+
+            <!-- <android.support.v7.widget.AppCompatCheckedTextView
+                 android:id="@+id/cbSetuju"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                 android:gravity="center_vertical"
+                 android:padding="@dimen/spacing_normal"
+                 android:text="Saya setuju dengan semua syarat dan ketentuan yang berlaku" />
+ -->
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cbSetuju"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_small"
+                android:text="Saya setuju dengan semua syarat dan ketentuan yang berlaku" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        layout="@layout/layout_footer_button_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

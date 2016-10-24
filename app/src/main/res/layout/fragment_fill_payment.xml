@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aca.travelsafe.Fragment.FillPaymentFragment">
+
+    <TextView
+        android:id="@+id/lblCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbarTransparentBlack"
+        android:padding="@dimen/spacing_normal"
+        android:text="Select payment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/colorText"
+
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblCaption"
+        android:padding="@dimen/spacing_small"
+
+        >
+
+        <RadioButton
+            android:id="@+id/rbPayKlikAca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackgroundBorderless"
+            android:drawableLeft="@drawable/logo"
+            android:padding="@dimen/spacing_small"
+            />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/btnPayClickAca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblCaption"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="@dimen/spacing_small"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_normal"
+            android:src="@drawable/logo" />
+    </FrameLayout>
+
+    <include
+        layout="@layout/layout_footer_button_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

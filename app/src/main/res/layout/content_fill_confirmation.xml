@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/label_title"
+                android:paddingLeft="0dp"
+                android:text="Policy" />
+
+            <include layout="@layout/layout_space" />
+
+            <TextView
+                style="@style/label_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_coverage" />
+
+            <TextView
+                android:id="@+id/txtCoverage"
+                style="@style/detail_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lorem_ipsum"
+                tools:text="International" />
+
+            <include layout="@layout/layout_space" />
+
+            <TextView
+                style="@style/label_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plan" />
+
+            <TextView
+                android:id="@+id/txtPlan"
+                style="@style/detail_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lorem_ipsum"
+                tools:text="VIP" />
+
+
+            <include layout="@layout/layout_space" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblPeriode"
+                    style="@style/label_confirmation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_periode" />
+
+                <TextView
+                    android:id="@+id/txtDays"
+                    style="@style/detail_confirmation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="0" />
+
+                <TextView
+                    style="@style/detail_confirmation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Days" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPeriode"
+                    style="@style/detail_confirmation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lorem_ipsum"
+                    tools:text="01 Jan 2000\n10 Jan 2000" />
+
+
+                <ImageView
+                    android:id="@+id/btnChangePeriode"
+                    android:layout_width="@dimen/icon_small"
+                    android:layout_height="@dimen/icon_small"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:layout_toRightOf="@id/txtPeriode"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_action_edit"
+                    android:tint="@color/colorPrimary"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <include layout="@layout/layout_space" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/label_confirmation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_destination" />
+
+                <TextView
+                    android:id="@+id/txtZone"
+                    style="@style/detail_confirmation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/colorSecondaryText"
+                    tools:text="Zone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtDestination"
+                style="@style/detail_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="America\nBrunei" />
+
+            <include layout="@layout/layout_space" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <include layout="@layout/layout_space" />
+
+    <android.support.v7.widget.CardView
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_normal">
+
+
+            <TextView
+                style="@style/label_title"
+                android:paddingLeft="0dp"
+                android:text="Premium" />
+
+
+            <include layout="@layout/layout_space" />
+
+
+            <TextView
+                style="@style/label_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_total_premium" />
+
+            <TextView
+                android:id="@+id/txtTotalPremium"
+                style="@style/detail_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lorem_ipsum"
+                tools:text="Rp. 1,000,000" />
+
+
+            <include layout="@layout/layout_space" />
+
+
+            <TextView
+                style="@style/label_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_total_additional_premium" />
+
+            <TextView
+                android:id="@+id/txtAdditionalPremium"
+                style="@style/detail_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lorem_ipsum"
+                tools:text="Rp. 1,000,000" />
+
+
+            <include layout="@layout/layout_space" />
+
+            <TextView
+                style="@style/label_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_total_loading_premium" />
+
+            <TextView
+                android:id="@+id/txtLoadingPremium"
+                style="@style/detail_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lorem_ipsum"
+                tools:text="Rp. 1,000,000" />
+
+
+            <include layout="@layout/layout_space" />
+
+
+            <TextView
+                style="@style/label_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_policy_charge" />
+
+            <TextView
+                android:id="@+id/txtPolicyCharge"
+                style="@style/detail_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lorem_ipsum"
+                tools:text="Rp. 1,000,000" />
+
+
+            <include layout="@layout/layout_space" />
+
+
+            <TextView
+                style="@style/label_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_total_paid" />
+
+            <TextView
+                android:id="@+id/txtTotalPaid"
+                style="@style/detail_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lorem_ipsum"
+                tools:text="40.000" />
+
+
+            <include layout="@layout/layout_space" />
+
+            <TextView android:id="@+id/lblTotalPaidInIdr"
+                style="@style/label_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_total_paid_in_idr" />
+
+            <TextView
+                android:id="@+id/txtTotalPaidInIdr"
+                style="@style/detail_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lorem_ipsum"
+                tools:text="40.000" />
+
+            <include layout="@layout/layout_space" />
+
+            <LinearLayout
+                android:id="@+id/viewDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/label_confirmation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discount "
+                        android:textColor="@color/material_red" />
+
+                    <TextView
+                        android:id="@+id/txtPersenDiskon"
+                        style="@style/detail_confirmation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/material_red"
+                        tools:text="(15%)" />
+
+                    <TextView
+                        style="@style/detail_confirmation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_without_policy_charge" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtDiscountAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_xsmall"
+                    tools:text="12.000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryLight">#C5CAE9</color>
+
+
+    <!--<color name="colorPrimary">#186cac</color>-->
+    <!--<color name="colorPrimaryDark">#15588b</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">@color/colorPrimary</color>
+    <color name="colorFallbackLight">#FF80AB</color>
+    <color name="colorFallbackDark">#F50057</color>
+
+    <color name="colorSecondaryAccent">#00BCD4</color>
+
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+
+    <color name="colorDivider">#B6B6B6</color>
+
+    <color name="colorText">#ffffff</color>
+    <color name="colorIcon">#ffffff</color>
+
+    <color name="colorTransulentBlack">#33000000</color>
+    <color name="colorTransulentWhite">#33ffffff</color>
+
+
+    <color name="colorGrey300">#E0E0E0</color>
+    <color name="colorGrey200">#EEEEEE</color>
+    <color name="colorGrey100">#F5F5F5</color>
+    <color name="colorGreyLighter">#FAFAFA</color>
+
+    <color name="colorToolbarTransparentBlack">#CC000000</color>
+    <color name="colorToolbarTransparentWhite">#CCFFFFFF</color>
+
+    <color name="colorTransparentBlack">#55000000</color>
+
+    <!--Color Material Date Picker-->
+    <color name="mdtp_accent_color">@color/colorPrimary</color>
+    <color name="mdtp_accent_color_dark">@color/colorPrimaryDark</color>
+
+
+
+
+    <!--
+     <color name="colorPrimary">#186cac</color>
+     <color name="colorPrimaryDark">#15588b</color>
+     <color name="colorAccent">@color/colorPrimary</color>
+     <color name="colorSecondaryAccent">@color/material_blue_grey</color>
+     <color name="colorPrimaryText">#212121</color>
+     <color name="colorSecondaryText">#727272</color>
+     <color name="colorDivider">#29000000</color>
+     <color name="colorText">#ffffff</color>
+     <color name="colorIcon">#ffffff</color>
+     <color name="colorTransulentBlack">#33000000</color>
+     <color name="colorTransulentWhite">#99ffffff</color>-->
+
+</resources>

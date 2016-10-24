@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewEmptyContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbarTransparentWhite" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorTransulentBlack"
+        android:gravity="center"
+        android:padding="@dimen/spacing_normal"
+        android:text="No Data"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+</RelativeLayout>

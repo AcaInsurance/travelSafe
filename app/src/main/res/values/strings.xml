@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">NewTravelSafe</string>
+    <string name="label_copyright">ACA NEW TRAVELSAFE \u00A9 2016 Copyright</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dashboard">New TravelSafe</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_activity_main">Dashboard</string>
+    <string name="title_activity_fill_inssured">New TravelSafe</string>
+    <string name="title_activity_choose_country">Pick Country</string>
+    <string name="title_activity_fill_family">Fill Family</string>
+    <string name="title_activity_sign_in">Sign in</string>
+    <string name="title_activity_my_profile">Profile</string>
+    <string name="title_activity_payment">Cashier</string>
+    <string name="title_activity_my_polis">MyPolisActivity</string>
+    <string name="title_activity_edit_confirmatiin">EditConfirmatiinActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="long_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel mauris ullamcorper, tempus lectus eu, gravida est. Donec ac augue felis. Cras id fermentum arcu. Maecenas accumsan porta eros, eu sodales ligula. Phasellus quis augue eu mauris molestie gravida. In facilisis arcu id lectus feugiat mollis. Nunc placerat justo sit amet sollicitudin ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet, nibh ut lacinia faucibus, neque velit consequat elit, vitae vehicula tellus quam eu justo.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_ipsum">-</string>
+    <string name="dummy_date">01 Jan 2016</string>
+    <string name="country">Country</string>
+    <string name="dummy_status">void</string>
+
+
+    <string name="send">send</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="retry">Retry</string>
+    <string name="discard">discard</string>
+    <string name="close">close</string>
+    <string name="delete">delete</string>
+
+    <!--transition name-->
+    <string name="polis">polis</string>
+
+
+    <string name="Dashboard">New TravelSafe</string>
+    <string name="Confirmation">Confirmation</string>
+    <string name="Customer_detail">Customer Detail</string>
+    <string name="Insurance_detail">Insurance Detail</string>
+    <string name="Flight_detail">Flight Detail</string>
+    <string name="TermCondition">Term &amp; Condition</string>
+    <string name="Payment">Payment</string>
+    <string name="Sign_in">Sign In</string>
+    <string name="Sign_up">Sign Up</string>
+    <string name="title_activity_signup">Sign Up</string>
+    <string name="profile">Profile</string>
+    <string name="my_draft">Waiting Payment</string>
+    <string name="my_purchase">My Policy</string>
+    <string name="Product">Product</string>
+    <string name="new_update">New Update Available</string>
+    <string name="maintenance">Currently under maintenance</string>
+    <string name="promo">Promo</string>
+    <string name="change_periode">Change Periode</string>
+
+
+    <string name="digits">0123465789</string>
+
+
+    <string name="message_succeed_signup">Sign up succeed</string>
+    <string name="message_succeed_login">Welcome</string>
+
+    <string name="message_failed_load_data">Load data failed</string>
+    <string name="message_failed_signup">Sign up failed</string>
+    <string name="message_failed_login">Sign in failed</string>
+    <string name="message_failed_submit_sppa">Save SPPA failed</string>
+    <string name="message_failed_get_account_data">Sync account failed</string>
+    <string name="message_failed_get_exchange_rate">Get exchange rate failed</string>
+    <string name="message_failed_update">Update failed</string>
+    <string name="messasge_failed_register_token">Failed to register token</string>
+    <string name="messasge_failed_use_promo">Using promo code failed</string>
+    <string name="message_failed_load_plan">Failed to load plan</string>
+
+    <string name="message_validate_empty_field">Fill the blank</string>
+    <string name="message_validate_empty_date">Fill the date</string>
+    <string name="message_validate_match_password">Password do not match</string>
+    <string name="message_validate_age" formatted="false">Age range from %d month to %d year</string>
+    <string name="message_validate_password_length" formatted="false">Password length should be %d - %d characters</string>
+    <string name="message_validate_password_complexity">Password should has uppercase, lowercase, and digit</string>
+    <string name="message_validate_already_exist">" sudah ada"</string>
+    <string name="message_validate_destination">Pick destination</string>
+    <string name="message_validate_flight">Add flight detail</string>
+    <string name="message_validate_arrival_date">Invalid Arrival Date</string>
+    <string name="message_validate_email">Incorrect email</string>
+    <string name="message_validation_invalid_promo_code">Invalid promo code</string>
+    <string name="message_validate_pick_payment">Pick one payment</string>
+    <string name="message_validate_invalid_password">Invalid password</string>
+    <string name="message_validate_maximum_days">Travel periode exceeds maximum days</string>
+    <string name="message_validation_provide_information">From and To at least 3 characters</string>
+    <string name="message_validation_family_number">Add at least 1 family</string>
+    <string name="message_validate_invalid_date">Invalid Periode of Policy</string>
+    <string name="message_validate_invalid_age">Age does not meet min and max requirement</string>
+    <string name="message_validate_invalid_flight_date">Flight date should be changed</string>
+
+    <string name="message_no_connection">No Connection</string>
+
+    <string name="message_item_deleted">Item deleted</string>
+    <string name="message_profile_updated">Updated</string>
+    <string name="message_failed_paid">Paid failed</string>
+    <string name="message_succeed_pay">Paid succeed</string>
+    <string name="message_failed_getting_promo">Failed getting promo</string>
+
+
+    <string name="message_caption_draft">draft</string>
+    <string name="message_caption_getting_promo">Getting Promo...</string>
+    <string name="message_caption_new_password_sent_to_email">New password has been sent to your email</string>
+    <string name="message_caption_verification_sent_to_email">User activation link has been sent to your email</string>
+    <string name="message_caption_login_first">Login first</string>
+    <string name="message_caption_sending_policy">Sending policy to your email</string>
+    <string name="message_caption_change_date_annual">You can not change the date while picked annual trip</string>
+    <string name="message_caption_setuju_syarat_ketentuan">Anda harus setuju dengan semua syarat dan ketentuan</string>
+
+    <string name="message_action_pay_later">Pay Later</string>
+    <string name="message_action_update">Update</string>
+    <string name="message_action_sign_up">Sign up</string>
+    <string name="message_action_sending">Sending</string>
+    <string name="message_action_checking_login">Checking login status</string>
+    <string name="message_action_sign_out">Sign out, Goodbye</string>
+
+    <string name="message_null">Result null</string>
+    <string name="message_no_data">Result no data</string>
+
+    <string name="message_validate_user_not_active">User has not been activated</string>
+    <string name="message_action_send_link_activation">Send activation link to your email</string>
+    <string name="message_caption_complete_your_transaction">Completing your transaction</string>
+    <string name="message_caption_please_wait">Please wait...</string>
+    <string name="message_dialog_confirm_close">All not confirmed data will be lose, discard?</string>
+    <string name="message_dialog_confirm_delete">Delete data?</string>
+    <string name="message_dialog_send_policy">E-Policy will be sent to your registered email</string>
+
+
+    <string name="label_full_name_nama_lengkap">Full Name (Nama Lengkap)</string>
+    <string name="label_date_of_birth">Date of Birth (Tanggal Lahir)</string>
+    <string name="label_passport_no">Passport No. (No. Passport)</string>
+    <string name="label_identity_no">Identity No. (No. KTP)</string>
+    <string name="label_citizen">Citizen (Kewarganegaraan)</string>
+    <string name="label_address">Address (Alamat)</string>
+    <string name="label_city">City (Kota)</string>
+    <string name="label_phone">Phone (Telepon)</string>
+    <string name="label_mobile">Mobile (Handphone)</string>
+    <string name="label_beneficiary_name">Beneficiary Name (Nama Ahli Waris)</string>
+    <string name="label_beneficiary_relation">Beneficiary Relation (Hubungan dengan Ahli Waris)</string>
+    <string name="label_name">Name (Nama)</string>
+    <string name="label_family_relation">Family Relation (Hubungan Keluarga)</string>
+    <string name="label_flight_no">Flight No. (No. Penerbangan)</string>
+    <string name="label_pick_date">Pick Date (Pilih Tanggal)</string>
+    <string name="label_from">From (Dari)</string>
+    <string name="label_to">To (Ke)</string>
+    <string name="label_city_of_origin">City of Origin (Kota Keberangkatan)</string>
+    <string name="label_family_member">Family Member (Anggota Keluarga)</string>
+    <string name="label_coverage">Coverage (Tipe)</string>
+    <string name="label_periode">Period (Periode) - </string>
+    <string name="label_destination">Destination (Tujuan)  </string>
+    <string name="label_total_premium">Total Premium (Total Premi)</string>
+    <string name="label_total_additional_premium">Total Additional Premium (Total Premi Tambahan)</string>
+    <string name="label_total_loading_premium">Total Loading Premium (Total Premi Loading)</string>
+    <string name="label_policy_charge">Policy Charge (Biaya Polis)</string>
+    <string name="label_total_paid">Total Paid (Total Bayar)</string>
+    <string name="label_total_paid_in_idr">Total Paid in IDR(Total Bayar dalam Rupiah)</string>
+    <string name="label_without_policy_charge">- without policy charge</string>
+    <string name="label_caption_you_can_tap_and_zoom_the_image_below">You can tap and zoom the image below</string>
+
+
+    <string name="message_syarat_ketentuan">\u2022 Saya/Kami menyatakan bahwa semua informasi dan pernyataan yang Saya/Kami isi adalah benar dan akan menjadi dasar kontrak asuransi.
+\n\n\u2022 Saya/Kami telah membaca, mengerti, dan menyetujui syarat dan ketentuan di dalam formulir ini dan parlindungan asuransi tidak akan dimulai sampai permohonan ini disetujui oleh PT. Asuransi Central Asia dan premi diterima penuh.
+\n\n\u2022 Saya/Kami mengerti bahwa perjalanan yang dilakukan berawal dari Indonesia dimana durasi perjalanan tidak boleh lebih dari 180 hari untuk polis satu kali perjalanan (single trip) dan maksud dari perjalanan bukan untuk tujuan medis atau untuk mendapatkan perawatan medis. Saya/Kami dalam keadaan sehat dan bebas dari segala gangguan fisik atau cacat badan.
+\n\n\u2022 Saya/Kami mengerti bahwa perjalanan yang dilakukan berawal dari Indonesia dimana durasi perjalanan tidak boleh lebih dari 90 hari untuk polis tahunan (annual) setiap melakukan perjalanan dan maksud dari perjalanan bukan untuk tujuan medis atau untuk mendapatkan perawatan medis. Saya/Kami dalam keadaan sehat dan bebas dari segala gangguan fisik atau cacat badan.
+\n\n\u2022 Saya/Kami setuju bahwa semua informasi yang diberikan kepada PT. Asuransi Central Asia dapat digunakan dan diungkapkan baik oleh PT. Asuransi Central Asia maupun perusahaan afiliasinya atau pihak ketiga lainnya sehubungan dengan formulir ini, penerbitan polis dan untuk memberi informasi.
+    </string>
+
+</resources>

@@ -1,0 +1,174 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.WithoutActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.WithoutActionBar.Black">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="colorControlNormal">@color/colorText</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.WithoutActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.WithoutActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+    </style>
+
+
+    <style name="floating_label_button">
+        <item name="android:paddingLeft">@dimen/spacing_xsmall</item>
+        <item name="android:textSize">@dimen/text_size_xsmall</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+    </style>
+
+    <style name="button_textview">
+        <item name="android:paddingTop">@dimen/spacing_small</item>
+        <item name="android:paddingLeft">@dimen/spacing_xsmall</item>
+        <item name="android:paddingBottom">@dimen/spacing_small</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body1</item>
+        <item name="android:gravity">center_vertical|left</item>
+
+    </style>
+
+    <style name="label_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/spacing_singleLine</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="spinner_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/spacing_singleLine</item>
+        <item name="android:background">?selectableItemBackground</item>
+
+    </style>
+
+
+    <style name="MyTextInputLayoutStyle">
+        <item name="android:theme">@style/MyEditTextTheme</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+    </style>
+
+    <style name="MyEditTextStyle" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:theme">@style/MyEditTextTheme</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:textSize">@dimen/text_size_xsmall</item>
+    </style>
+
+    <style name="polis_text_style" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:theme">@style/polis_text_theme</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:inputType">none</item>
+        <item name="android:editable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textSize">@dimen/text_size_xsmall</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+
+    <style name="MyEditTextStyleWhite">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorText</item>
+    </style>
+
+    <style name="AppTheme.Button.Colored" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+
+    <style name="MyEditTextTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorDivider</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+
+    <style name="polis_text_theme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorTransulentWhite</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MyEditTextThemeWhite" parent="MyEditTextTheme">
+        <item name="colorControlNormal">@color/colorText</item>
+    </style>
+
+    <style name="FullWidthEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/abc_text_size_subhead_material</item>
+    </style>
+
+
+    <style name="label_confirmation">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textSize">@dimen/text_size_xsmall</item>
+    </style>
+
+    <style name="detail_confirmation">
+        <item name="android:textSize">@dimen/text_size_xsmall</item>
+    </style>
+
+
+    <!--Dashboard style-->
+
+    <style name="style_dashboard_text_top">
+        <item name="android:tint">@color/colorText</item>
+        <item name="android:padding">@dimen/spacing_small</item>
+        <item name="android:drawableRight">@drawable/ic_expand_more</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="style_dashboard_text_bottom">
+        <item name="android:padding">@dimen/spacing_small</item>
+        <item name="android:textColor">@color/colorText</item>
+
+    </style>
+
+    <style name="style_dashboard_text_bottom_2">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:padding">@dimen/spacing_small</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorText</item>
+    </style>
+
+    <style name="style_dashboard_spinner">
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="style_spinner_white" parent="">
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <!--end of dashboard style-->
+
+
+</resources>

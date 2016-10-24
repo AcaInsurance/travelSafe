@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/spacing_small"
+    android:foreground="?selectableItemBackground"
+    android:transitionName="@string/polis">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_normal">
+
+        <TextView
+            android:id="@+id/lblPolicyNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Policy No. "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/txtNoPolis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lblPolicyNo"
+            android:layout_toRightOf="@id/lblPolicyNo"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            tools:text="00115522" />
+
+        <TextView
+            android:id="@+id/txtCoverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNoPolis"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text="International - Regular Individu" />
+
+
+        <ImageView
+            android:id="@+id/imgCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCoverage"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:background="@drawable/ic_date_range" />
+
+        <TextView
+            android:id="@+id/txtDepartureDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgCalendar"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_toRightOf="@+id/imgCalendar"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/text_size_xsmall"
+            tools:text="@string/dummy_date" />
+
+        <TextView
+            android:id="@+id/lblUntil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtDepartureDate"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:layout_toRightOf="@id/txtDepartureDate"
+            android:text="until"
+            android:textSize="@dimen/text_size_xsmall"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtArrivalDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtDepartureDate"
+            android:layout_below="@+id/txtDepartureDate"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/text_size_xsmall"
+
+            tools:text="@string/dummy_date"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/imgPlane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtDestination"
+            android:background="@drawable/ic_place" />
+
+        <TextView
+            android:id="@+id/txtDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtArrivalDate"
+            android:layout_below="@id/txtArrivalDate"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/text_size_xsmall"
+
+            tools:text="Destination" />
+
+        <TextView
+            android:id="@+id/txtSppaDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtNoPolis"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_xsmall"
+            tools:text="@string/dummy_date" />
+
+
+
+        <TextView
+            android:id="@+id/txtStatusPolis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtSppaDate"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:textColor="@color/material_red"
+            tools:text="Cancel" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

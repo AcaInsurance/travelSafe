@@ -1,0 +1,167 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorToolbarTransparentBlack"
+    tools:context=".Fragment.SignInFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_normal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_account_circle"
+                    android:tint="@android:color/white" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lblEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:textColorHint="@color/colorText"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/txtUserID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_singleLine"
+                        android:hint="Email"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorText"
+                        android:theme="@style/MyEditTextThemeWhite"
+
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/layout_space" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_lock"
+                    android:tint="@android:color/white" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lblPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:textColorHint="@color/colorText">
+
+                    <EditText
+                        android:id="@+id/txtpassword"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_singleLine"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:theme="@style/MyEditTextThemeWhite"
+
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnForgotPassword"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot your password ?"
+                android:textAllCaps="false"
+                android:textColor="@color/colorText" />
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:text="Sign In"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="@color/colorText" />
+
+
+            <ProgressBar
+                android:id="@+id/login_progress"
+                style="@style/Base.Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:layout_weight="0.07"/>
+
+            <Button
+                android:id="@+id/btnCreateAccount"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textColor="@color/colorText" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/lblCopyRight"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_singleLine"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="@string/label_copyright"
+            android:textColor="@color/colorText" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

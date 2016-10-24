@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aca.travelsafe.Fragment.FillFamilyFragment">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/viewScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/viewButtonFooter">
+
+        <android.support.v7.widget.CardView
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_normal">
+
+
+                <TextView
+                    android:id="@+id/lblCaption"
+                    style="@style/label_title"
+                    android:paddingLeft="0dp"
+                    android:text="Fill Family" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lblName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/txtName"
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_name"
+                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:maxLength="200"
+                        tools:text="test" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    style="@style/floating_label_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:text="@string/label_family_relation" />
+
+                <Spinner
+                    android:id="@+id/spnFamilyRelation"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lblDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal">
+
+                    <EditText
+                        android:id="@+id/txtDOB"
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/label_date_of_birth"
+                        android:inputType="none" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lblPassport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal">
+
+                    <EditText
+                        android:id="@+id/txtPassport"
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_passport_no"
+                        android:maxLength="50" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    style="@style/floating_label_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:text="@string/label_citizen" />
+
+                <Spinner
+                    android:id="@+id/spnCitizen"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/MyEditTextTheme" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/layout_footer_button_ok" />
+</RelativeLayout>

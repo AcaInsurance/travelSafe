@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ChooseCountryFragment"
+    tools:showIn="@layout/activity_choose_country">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listMyDraft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewButtonFooter"
+        />
+
+    <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+        android:id="@+id/fast_scroller"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/viewButtonFooter"
+        android:visibility="gone"
+
+        />
+
+    <include
+        layout="@layout/layout_footer_button_ok"/>
+    <!---->
+    <!--<LinearLayout android:id="@+id/viewButtonFooter"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--&gt;-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/btnCancel"-->
+            <!--style="@style/Base.Widget.AppCompat.Button.Borderless"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Cancel"-->
+
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnOk"-->
+            <!--style="@style/Base.Widget.AppCompat.Button.Borderless"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Ok"-->
+
+            <!--/>-->
+        <!---->
+         <!---->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group
+        android:id="@+id/groupTop"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_action_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_log_in"
+            android:icon="@drawable/ic_account_box"
+            android:title="Log In" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_box"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_draft"
+            android:icon="@drawable/ic_av_timer"
+            android:title="Waiting Payment" />
+        <item
+            android:id="@+id/nav_my_purchase"
+            android:icon="@drawable/ic_shopping_basket"
+            android:title="My Policy" />
+        <item
+            android:id="@+id/nav_promo"
+            android:icon="@drawable/ic_redeem"
+            android:title="Promo" />
+        <!--<item-->
+            <!--android:id="@+id/nav_product"-->
+            <!--android:icon="@drawable/ic_store"-->
+            <!--android:title="Product" />-->
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_contact_us"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Contact Us" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_faq"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="FAQ" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_about"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="About" />-->
+        <!--</menu>-->
+    <!--</item>-->
+    <group android:id="@+id/groupBottom"
+        >
+        <item android:id="@+id/nav_log_out"
+            android:title="Sign Out"/>
+
+    </group>
+
+</menu>

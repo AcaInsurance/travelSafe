@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swrLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorToolbarTransparentWhite"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".FillInsuredActivity"
+    tools:showIn="@layout/activity_fill_inssured">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="@string/message_caption_draft"
+        >
+
+
+    </FrameLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

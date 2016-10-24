@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aca.travelsafe.Fragment.TripAnnualFragment">
+
+    <include layout="@layout/layout_plan" />
+
+    <include layout="@layout/layout_space" />
+
+    <include layout="@layout/layout_zona" />
+</LinearLayout>

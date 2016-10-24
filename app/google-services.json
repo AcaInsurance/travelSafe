@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "81160162157",
+    "firebase_url": "https://newtravelsafe.firebaseio.com",
+    "project_id": "newtravelsafe",
+    "storage_bucket": "newtravelsafe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81160162157:android:9bd4b8a98aee11cd",
+        "android_client_info": {
+          "package_name": "com.aca.travelsafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81160162157-gs4buvrkgftda5l96d338qig6fhkul8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW_dpaPBuDLsOlAjdkN8qLNs7Jro85Ln4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_menu">
+        <item>open</item>
+        <item>delete</item>
+    </string-array>
+
+    <string-array name="benefit_domestic_nusantara_1">
+        <item>Kematian dan Cacat Tetap akibat Kecelakaan/Death and Permanent Disablement due to Accident: 50,000,000</item>
+    </string-array>
+</resources>
